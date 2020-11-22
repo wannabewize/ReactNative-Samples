@@ -3,12 +3,12 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'navigation' do
+target 'StackNavigation' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'navigationTests' do
+  target 'StackNavigationTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +23,10 @@ target 'navigation' do
   end
 end
 
-target 'navigation-tvOS' do
-  # Pods for navigation-tvOS
+target 'StackNavigation-tvOS' do
+  # Pods for StackNavigation-tvOS
 
-  target 'navigation-tvOSTests' do
+  target 'StackNavigation-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

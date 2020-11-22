@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* navigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* navigationTests.m */; };
+		00E356F31AD99517003FC87E /* StackNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* StackNavigationTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		294A3BE45FA3810DAD00C95A /* libPods-navigation-navigationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A11DDA8556D1C720E33A4DE9 /* libPods-navigation-navigationTests.a */; };
+		294A3BE45FA3810DAD00C95A /* libPods-StackNavigation-StackNavigationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A11DDA8556D1C720E33A4DE9 /* libPods-StackNavigation-StackNavigationTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* navigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* navigationTests.m */; };
-		44DA73CC22CE31929A7659DA /* libPods-navigation-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 474186FCDDD41AA9F8F6C8C6 /* libPods-navigation-tvOSTests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* StackNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* StackNavigationTests.m */; };
+		44DA73CC22CE31929A7659DA /* libPods-StackNavigation-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 474186FCDDD41AA9F8F6C8C6 /* libPods-StackNavigation-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		F9FC489D37A956FFDD0B5F5D /* libPods-navigation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 719F2C0FA662F80EDEF3F909 /* libPods-navigation-tvOS.a */; };
-		FF3C55FCCF54E78239011B28 /* libPods-navigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80683009F63A38C1EBFD8BE6 /* libPods-navigation.a */; };
+		F9FC489D37A956FFDD0B5F5D /* libPods-StackNavigation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 719F2C0FA662F80EDEF3F909 /* libPods-StackNavigation-tvOS.a */; };
+		FF3C55FCCF54E78239011B28 /* libPods-StackNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80683009F63A38C1EBFD8BE6 /* libPods-StackNavigation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = navigation;
+			remoteInfo = StackNavigation;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "navigation-tvOS";
+			remoteInfo = "StackNavigation-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* navigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = navigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* StackNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* navigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = navigationTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = navigation/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = navigation/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = navigation/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = navigation/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = navigation/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* navigation-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "navigation-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* navigation-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "navigation-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		387422440686D0975713ED45 /* Pods-navigation-navigationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-navigation-navigationTests.release.xcconfig"; path = "Target Support Files/Pods-navigation-navigationTests/Pods-navigation-navigationTests.release.xcconfig"; sourceTree = "<group>"; };
-		474186FCDDD41AA9F8F6C8C6 /* libPods-navigation-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-navigation-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ABA6AF3D7FE478059B85B91 /* Pods-navigation-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-navigation-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-navigation-tvOSTests/Pods-navigation-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		719F2C0FA662F80EDEF3F909 /* libPods-navigation-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-navigation-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FA72812EDDFE918F3F96593 /* Pods-navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-navigation.debug.xcconfig"; path = "Target Support Files/Pods-navigation/Pods-navigation.debug.xcconfig"; sourceTree = "<group>"; };
-		80683009F63A38C1EBFD8BE6 /* libPods-navigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-navigation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = navigation/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A195DD9FAE9BFF2C846C86C /* Pods-navigation-navigationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-navigation-navigationTests.debug.xcconfig"; path = "Target Support Files/Pods-navigation-navigationTests/Pods-navigation-navigationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A11DDA8556D1C720E33A4DE9 /* libPods-navigation-navigationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-navigation-navigationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9A90E851C9453739FE73DD8 /* Pods-navigation-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-navigation-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-navigation-tvOSTests/Pods-navigation-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		BEECED7D90E284EF86ADC1A7 /* Pods-navigation-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-navigation-tvOS.release.xcconfig"; path = "Target Support Files/Pods-navigation-tvOS/Pods-navigation-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		D12E2D5EE993533F294ECC7C /* Pods-navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-navigation.release.xcconfig"; path = "Target Support Files/Pods-navigation/Pods-navigation.release.xcconfig"; sourceTree = "<group>"; };
-		E6F0E36FD9FC869125ABF58C /* Pods-navigation-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-navigation-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-navigation-tvOS/Pods-navigation-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* StackNavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackNavigationTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* StackNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = StackNavigation/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = StackNavigation/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StackNavigation/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StackNavigation/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StackNavigation/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* StackNavigation-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackNavigation-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* StackNavigation-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StackNavigation-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		387422440686D0975713ED45 /* Pods-StackNavigation-StackNavigationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackNavigation-StackNavigationTests.release.xcconfig"; path = "Target Support Files/Pods-StackNavigation-StackNavigationTests/Pods-StackNavigation-StackNavigationTests.release.xcconfig"; sourceTree = "<group>"; };
+		474186FCDDD41AA9F8F6C8C6 /* libPods-StackNavigation-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackNavigation-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABA6AF3D7FE478059B85B91 /* Pods-StackNavigation-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackNavigation-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-StackNavigation-tvOSTests/Pods-StackNavigation-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		719F2C0FA662F80EDEF3F909 /* libPods-StackNavigation-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackNavigation-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA72812EDDFE918F3F96593 /* Pods-StackNavigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackNavigation.debug.xcconfig"; path = "Target Support Files/Pods-StackNavigation/Pods-StackNavigation.debug.xcconfig"; sourceTree = "<group>"; };
+		80683009F63A38C1EBFD8BE6 /* libPods-StackNavigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackNavigation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StackNavigation/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A195DD9FAE9BFF2C846C86C /* Pods-StackNavigation-StackNavigationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackNavigation-StackNavigationTests.debug.xcconfig"; path = "Target Support Files/Pods-StackNavigation-StackNavigationTests/Pods-StackNavigation-StackNavigationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A11DDA8556D1C720E33A4DE9 /* libPods-StackNavigation-StackNavigationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackNavigation-StackNavigationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A90E851C9453739FE73DD8 /* Pods-StackNavigation-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackNavigation-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-StackNavigation-tvOSTests/Pods-StackNavigation-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEECED7D90E284EF86ADC1A7 /* Pods-StackNavigation-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackNavigation-tvOS.release.xcconfig"; path = "Target Support Files/Pods-StackNavigation-tvOS/Pods-StackNavigation-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		D12E2D5EE993533F294ECC7C /* Pods-StackNavigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackNavigation.release.xcconfig"; path = "Target Support Files/Pods-StackNavigation/Pods-StackNavigation.release.xcconfig"; sourceTree = "<group>"; };
+		E6F0E36FD9FC869125ABF58C /* Pods-StackNavigation-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackNavigation-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-StackNavigation-tvOS/Pods-StackNavigation-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				294A3BE45FA3810DAD00C95A /* libPods-navigation-navigationTests.a in Frameworks */,
+				294A3BE45FA3810DAD00C95A /* libPods-StackNavigation-StackNavigationTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF3C55FCCF54E78239011B28 /* libPods-navigation.a in Frameworks */,
+				FF3C55FCCF54E78239011B28 /* libPods-StackNavigation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9FC489D37A956FFDD0B5F5D /* libPods-navigation-tvOS.a in Frameworks */,
+				F9FC489D37A956FFDD0B5F5D /* libPods-StackNavigation-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DA73CC22CE31929A7659DA /* libPods-navigation-tvOSTests.a in Frameworks */,
+				44DA73CC22CE31929A7659DA /* libPods-StackNavigation-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* navigationTests */ = {
+		00E356EF1AD99517003FC87E /* StackNavigationTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* navigationTests.m */,
+				00E356F21AD99517003FC87E /* StackNavigationTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = navigationTests;
+			path = StackNavigationTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* navigation */ = {
+		13B07FAE1A68108700A75B9A /* StackNavigation */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = navigation;
+			name = StackNavigation;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				80683009F63A38C1EBFD8BE6 /* libPods-navigation.a */,
-				A11DDA8556D1C720E33A4DE9 /* libPods-navigation-navigationTests.a */,
-				719F2C0FA662F80EDEF3F909 /* libPods-navigation-tvOS.a */,
-				474186FCDDD41AA9F8F6C8C6 /* libPods-navigation-tvOSTests.a */,
+				80683009F63A38C1EBFD8BE6 /* libPods-StackNavigation.a */,
+				A11DDA8556D1C720E33A4DE9 /* libPods-StackNavigation-StackNavigationTests.a */,
+				719F2C0FA662F80EDEF3F909 /* libPods-StackNavigation-tvOS.a */,
+				474186FCDDD41AA9F8F6C8C6 /* libPods-StackNavigation-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +152,14 @@
 		35461D519282BF942D59195F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7FA72812EDDFE918F3F96593 /* Pods-navigation.debug.xcconfig */,
-				D12E2D5EE993533F294ECC7C /* Pods-navigation.release.xcconfig */,
-				8A195DD9FAE9BFF2C846C86C /* Pods-navigation-navigationTests.debug.xcconfig */,
-				387422440686D0975713ED45 /* Pods-navigation-navigationTests.release.xcconfig */,
-				E6F0E36FD9FC869125ABF58C /* Pods-navigation-tvOS.debug.xcconfig */,
-				BEECED7D90E284EF86ADC1A7 /* Pods-navigation-tvOS.release.xcconfig */,
-				5ABA6AF3D7FE478059B85B91 /* Pods-navigation-tvOSTests.debug.xcconfig */,
-				A9A90E851C9453739FE73DD8 /* Pods-navigation-tvOSTests.release.xcconfig */,
+				7FA72812EDDFE918F3F96593 /* Pods-StackNavigation.debug.xcconfig */,
+				D12E2D5EE993533F294ECC7C /* Pods-StackNavigation.release.xcconfig */,
+				8A195DD9FAE9BFF2C846C86C /* Pods-StackNavigation-StackNavigationTests.debug.xcconfig */,
+				387422440686D0975713ED45 /* Pods-StackNavigation-StackNavigationTests.release.xcconfig */,
+				E6F0E36FD9FC869125ABF58C /* Pods-StackNavigation-tvOS.debug.xcconfig */,
+				BEECED7D90E284EF86ADC1A7 /* Pods-StackNavigation-tvOS.release.xcconfig */,
+				5ABA6AF3D7FE478059B85B91 /* Pods-StackNavigation-tvOSTests.debug.xcconfig */,
+				A9A90E851C9453739FE73DD8 /* Pods-StackNavigation-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -175,9 +175,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* navigation */,
+				13B07FAE1A68108700A75B9A /* StackNavigation */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* navigationTests */,
+				00E356EF1AD99517003FC87E /* StackNavigationTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				35461D519282BF942D59195F /* Pods */,
@@ -190,10 +190,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* navigation.app */,
-				00E356EE1AD99517003FC87E /* navigationTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* navigation-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* navigation-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* StackNavigation.app */,
+				00E356EE1AD99517003FC87E /* StackNavigationTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* StackNavigation-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* StackNavigation-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* navigationTests */ = {
+		00E356ED1AD99517003FC87E /* StackNavigationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "navigationTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "StackNavigationTests" */;
 			buildPhases = (
 				5266EB9FFF2103FDA0B536BB /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -216,14 +216,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = navigationTests;
-			productName = navigationTests;
-			productReference = 00E356EE1AD99517003FC87E /* navigationTests.xctest */;
+			name = StackNavigationTests;
+			productName = StackNavigationTests;
+			productReference = 00E356EE1AD99517003FC87E /* StackNavigationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* navigation */ = {
+		13B07F861A680F5B00A75B9A /* StackNavigation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "navigation" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "StackNavigation" */;
 			buildPhases = (
 				706787E4EA5559854299A475 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -237,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = navigation;
-			productName = navigation;
-			productReference = 13B07F961A680F5B00A75B9A /* navigation.app */;
+			name = StackNavigation;
+			productName = StackNavigation;
+			productReference = 13B07F961A680F5B00A75B9A /* StackNavigation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* navigation-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* StackNavigation-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "navigation-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "StackNavigation-tvOS" */;
 			buildPhases = (
 				7E605429DC1FDD492E0621DB /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -257,14 +257,14 @@
 			);
 			dependencies = (
 			);
-			name = "navigation-tvOS";
-			productName = "navigation-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* navigation-tvOS.app */;
+			name = "StackNavigation-tvOS";
+			productName = "StackNavigation-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* StackNavigation-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* navigation-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* StackNavigation-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "navigation-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "StackNavigation-tvOSTests" */;
 			buildPhases = (
 				36F2D9E356DB9E7AF40D56CC /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -276,9 +276,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "navigation-tvOSTests";
-			productName = "navigation-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* navigation-tvOSTests.xctest */;
+			name = "StackNavigation-tvOSTests";
+			productName = "StackNavigation-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* StackNavigation-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +307,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "navigation" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "StackNavigation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,10 +320,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* navigation */,
-				00E356ED1AD99517003FC87E /* navigationTests */,
-				2D02E47A1E0B4A5D006451C7 /* navigation-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* navigation-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* StackNavigation */,
+				00E356ED1AD99517003FC87E /* StackNavigationTests */,
+				2D02E47A1E0B4A5D006451C7 /* StackNavigation-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* StackNavigation-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -406,7 +406,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-navigation-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StackNavigation-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -428,7 +428,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-navigation-navigationTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StackNavigation-StackNavigationTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -450,7 +450,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-navigation-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StackNavigation-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -472,7 +472,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-navigation-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StackNavigation-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -485,7 +485,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-navigation/Pods-navigation-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StackNavigation/Pods-StackNavigation-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -494,7 +494,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-navigation/Pods-navigation-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StackNavigation/Pods-StackNavigation-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -541,7 +541,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-navigation-navigationTests/Pods-navigation-navigationTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StackNavigation-StackNavigationTests/Pods-StackNavigation-StackNavigationTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -550,7 +550,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-navigation-navigationTests/Pods-navigation-navigationTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StackNavigation-StackNavigationTests/Pods-StackNavigation-StackNavigationTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -560,7 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* navigationTests.m in Sources */,
+				00E356F31AD99517003FC87E /* StackNavigationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* navigationTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* StackNavigationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,12 +595,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* navigation */;
+			target = 13B07F861A680F5B00A75B9A /* StackNavigation */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* navigation-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* StackNavigation-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -608,14 +608,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A195DD9FAE9BFF2C846C86C /* Pods-navigation-navigationTests.debug.xcconfig */;
+			baseConfigurationReference = 8A195DD9FAE9BFF2C846C86C /* Pods-StackNavigation-StackNavigationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = navigationTests/Info.plist;
+				INFOPLIST_FILE = StackNavigationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -625,17 +625,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/navigation.app/navigation";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackNavigation.app/StackNavigation";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 387422440686D0975713ED45 /* Pods-navigation-navigationTests.release.xcconfig */;
+			baseConfigurationReference = 387422440686D0975713ED45 /* Pods-StackNavigation-StackNavigationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = navigationTests/Info.plist;
+				INFOPLIST_FILE = StackNavigationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -645,19 +645,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/navigation.app/navigation";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackNavigation.app/StackNavigation";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FA72812EDDFE918F3F96593 /* Pods-navigation.debug.xcconfig */;
+			baseConfigurationReference = 7FA72812EDDFE918F3F96593 /* Pods-StackNavigation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = navigation/Info.plist;
+				INFOPLIST_FILE = StackNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -665,7 +665,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = navigation;
+				PRODUCT_NAME = StackNavigation;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,12 +674,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D12E2D5EE993533F294ECC7C /* Pods-navigation.release.xcconfig */;
+			baseConfigurationReference = D12E2D5EE993533F294ECC7C /* Pods-StackNavigation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = navigation/Info.plist;
+				INFOPLIST_FILE = StackNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -687,7 +687,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = navigation;
+				PRODUCT_NAME = StackNavigation;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -695,7 +695,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6F0E36FD9FC869125ABF58C /* Pods-navigation-tvOS.debug.xcconfig */;
+			baseConfigurationReference = E6F0E36FD9FC869125ABF58C /* Pods-StackNavigation-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -706,14 +706,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "navigation-tvOS/Info.plist";
+				INFOPLIST_FILE = "StackNavigation-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.navigation-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.StackNavigation-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -723,7 +723,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEECED7D90E284EF86ADC1A7 /* Pods-navigation-tvOS.release.xcconfig */;
+			baseConfigurationReference = BEECED7D90E284EF86ADC1A7 /* Pods-StackNavigation-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -734,14 +734,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "navigation-tvOS/Info.plist";
+				INFOPLIST_FILE = "StackNavigation-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.navigation-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.StackNavigation-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -751,7 +751,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ABA6AF3D7FE478059B85B91 /* Pods-navigation-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 5ABA6AF3D7FE478059B85B91 /* Pods-StackNavigation-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -761,24 +761,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "navigation-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "StackNavigation-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.navigation-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.StackNavigation-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/navigation-tvOS.app/navigation-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackNavigation-tvOS.app/StackNavigation-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9A90E851C9453739FE73DD8 /* Pods-navigation-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = A9A90E851C9453739FE73DD8 /* Pods-StackNavigation-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -788,17 +788,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "navigation-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "StackNavigation-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.navigation-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.StackNavigation-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/navigation-tvOS.app/navigation-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackNavigation-tvOS.app/StackNavigation-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -919,7 +919,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "navigationTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "StackNavigationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -928,7 +928,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "navigation" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "StackNavigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -937,7 +937,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "navigation-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "StackNavigation-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -946,7 +946,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "navigation-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "StackNavigation-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -955,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "navigation" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "StackNavigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

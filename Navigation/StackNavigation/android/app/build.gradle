@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.navigation"
+        applicationId "com.stacknavigation"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
