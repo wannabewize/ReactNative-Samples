@@ -22,86 +22,31 @@ import { createStackNavigator } from '@react-navigation/stack';
 // % yarn add react-native-vector-icons 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const HomeScreen = () => {
-    const navigation = useNavigation();
-
-    useEffect( () => {
-        console.log('Home Screen Appear!'); // Not Working
-    }, [navigation]);
-
-    useEffect( () => {
-        const unsubscribe = navigation.addListener('focus', () => {
-            console.log('Home Screen focus event fired!');
-        });
-        return unsubscribe();
-    }, [navigation]);
-
-    useEffect( () => {
-        const unsubscribe = navigation.addListener('blur', () => {
-            console.log('Home Screen blue event fired!');
-        });
-        return unsubscribe;
-    }, [navigation])    
-
-    return (
-        <SafeAreaView style={{flex:1}}>
-            <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
-                <Text>Home Screen</Text>
-                <Button onPress={() => {navigation.navigate('SettingScreen')}} title='설정 보기' />
-            </View>
-            
-        </SafeAreaView>
-    )
-}
-
-const HomeDetailScreen = () => {
-    return (
-        <View><Text>Home Detail</Text></View>
-    )
-}
-
-const SettingsScreen = () => {
-    return (
-        <SafeAreaView style={{flex:1}}>
-            <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
-                <Text>Setting Screen</Text>
-            </View>
-        </SafeAreaView>
-    )
-}
+import HomeNavigation from "./HomeNavigation";
+import SettingNavigation from "./SettingNavigation";
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
-
 
 const App = () => {
     return (
         <NavigationContainer>
-            <Tab.Navigator
-                tabBarOptions={{
-                    activeTintColor: 'red'
-                }}
-            >
+            <Tab.Navigator>
                 <Tab.Screen
                     name="HomeScreen"
-                    component={
-                        <Stack.Navigator>
-                            <Stack.Screen name='HomeScreen' component={HomeScreen} />
-                            <Stack.Screen name='HomeDetailScreen' component={HomeDetailScreen} />
-                        </Stack.Navigator>}
+                    component={HomeNavigation}
                     options={{
                         tabBarIcon: ({focused}) =>  {
                             return focused ?
-                                <Ionicons name="film-outline" size={28} color="red"/>
+                                <Ionicons name="film-outline" size={28} color="black"/>
                                 : <Ionicons name="film-outline" size={28} color="gray"/>
                         }
                     }}
                 />
                 <Tab.Screen name="SettingScreen"
-                    component={SettingsScreen}
+                    component={SettingNavigation}
                     options={{
                         tabBarIcon: ({focusd}) => {
-                            return focusd ? <Ionicons name="cog-outline" size={28}  color="red"/>
+                            return focusd ? <Ionicons name="cog-outline" size={28}  color="black"/>
                                 : <Ionicons name="cog-outline" size={28} color="gray"/>
                         }
                     }}
