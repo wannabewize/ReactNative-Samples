@@ -6,17 +6,13 @@
  * @flow strict-local
  */
 
-import React, {useEffect, useState} from 'react';
-import {
-    SafeAreaView,
-    View,
-    StatusBar,
-    TextInput,
-    Button,
-} from 'react-native';
+import React from 'react';
+import { SafeAreaView, StatusBar} from 'react-native';
 import axios from "axios";
 import MapComponent from './MapViewComponent';
 
+
+// 검색 테스트
 const resolveIDU = async () => {
     try {
         const ret = await axios({
@@ -31,6 +27,7 @@ const resolveIDU = async () => {
     }
 }
 
+// 초기 데이터
 const data = [
     {title : 'CU' , coordinate: {latitude:37.629661, longitude:127.057926}},
     {title : 'CU' , description: "연지스퀘어", coordinate: {latitude:37.630033, longitude:127.055636}},

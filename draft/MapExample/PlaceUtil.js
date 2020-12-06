@@ -1,16 +1,19 @@
+import {KakaoAPI} from "./config";
 import axios from "axios";
 
-export const findPlace = async (keyword) => {
+export const findPlace = async (keyword, center, radius = 1000) => {
     try {
+        // Kakao 위치 검색 API
         const ret = await axios({
             method: 'get',
             url: 'https://dapi.kakao.com/v2/local/search/keyword.json',
             params: {
                 query: keyword,
-                x: 37.630814, y: 127.055037, radius: 1000
+                x: center.x, y: center.y, radius
             },
-            headers: {Authorization: 'KakaoAK deb7adbb7fc4176e0df5d487611fa7d8'}
+            headers: {Authorization: `KakaoAK ${KakaoAPI}`}
         });        
+        
         const res = ret.data;
         const documents = res.documents;
         const places = documents.map( item => {

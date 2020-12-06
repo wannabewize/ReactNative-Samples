@@ -11,6 +11,13 @@ const MapComponent = ({stores}) => {
     let [places, setPlaces] = useState([]);
     let [modalVisible, setModalVisible] = useState(false);
     let [selectedPlaceUrl, setSelected] = useState(null);
+    // 초기 데이터
+    let [region, setRegion] = useState({
+        latitude: 37.630814,
+        longitude: 127.055037,
+        latitudeDelta: 0.0922,
+        longitudeDelta: 0.0421
+    });
 
     return (
         <View style={{flex: 1}}>
@@ -23,24 +30,20 @@ const MapComponent = ({stores}) => {
                 <Button                    
                     title="검색"
                     onPress={async () => {
-                        if ( keyword.length > 3 ) {
-                            const searchRet = await findPlace(keyword);                            
+                        if ( keyword.length > 3 ) {                            
+                            const radius = region.latitudeDelta * 10000;
+                            const searchRet = await findPlace(keyword, {x: region.longitude, y:region.latitude}, radius);
                             setPlaces(searchRet);
                             setKeyword('');
                         }
                     }}
                 />
             </View>
-            <MapView
+            <MapView                
                 style={{flex: 1}}
-                initialRegion={{
-                    latitude: 37.630814,
-                    longitude: 127.055037,
-                    latitudeDelta: 0.0922,
-                    longitudeDelta: 0.0421
-                }}
+                initialRegion={region}
                 showsUserLocation={true}
-                onRegionChange={(region, byGesture) => { console.log('region changed :', region)}}
+                onRegionChange={(region) => setRegion(region) }
                 onMarkerPress={(e) => {
                     // 마커 위치 정보(위도/경도)를 토대로, 선택된 항목 찾기
                     const coordiante = e.nativeEvent.coordinate;
