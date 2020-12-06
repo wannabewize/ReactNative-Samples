@@ -1,41 +1,17 @@
 import React, {useState} from 'react';
 import {View, TextInput, Button } from 'react-native';
-import axios from "axios";
 import MapView, {Marker} from "react-native-maps";
+import Modal from 'react-native-modal';
+import {findPlace} from "./PlaceUtil";
+import { WebView } from 'react-native-webview';
 
-const findPlace = async (keyword) => {
-    try {
-        const ret = await axios({
-            method: 'get',
-            url: 'https://dapi.kakao.com/v2/local/search/keyword.json',
-            params: {
-                query: keyword,
-                x: 37.630814, y: 127.055037, radius: 1000
-            },
-            headers: {Authorization: 'KakaoAK deb7adbb7fc4176e0df5d487611fa7d8'}
-        });        
-        const res = ret.data;
-        const documents = res.documents;
-        const places = documents.map( item => {
-            return {
-                id: item.id,
-                title: item.place_name,
-                coordinate: {latitude: parseFloat(item.y), longitude: parseFloat(item.x)},
-                url: item.place_url }
-        });
-        return places;
-    } catch (error) {
-        console.error(error);        
-    }    
-}
-
-// (async () => {
-//     resolvePlace('편의점')
-// })();
 
 const MapComponent = ({stores}) => {
     let [keyword, setKeyword] = useState('');
     let [places, setPlaces] = useState([]);
+    let [modalVisible, setModalVisible] = useState(false);
+    let [selectedPlaceUrl, setSelected] = useState(null);
+
     return (
         <View style={{flex: 1}}>
             <View style={{flexDirection:'row', height: 48, marginHorizontal: 12}}>
@@ -66,11 +42,20 @@ const MapComponent = ({stores}) => {
                 showsUserLocation={true}
                 onRegionChange={(region, byGesture) => { console.log('region changed :', region)}}
                 onMarkerPress={(e) => {
-                    console.log('marker press :', e.nativeEvent);
+                    // 마커 위치 정보(위도/경도)를 토대로, 선택된 항목 찾기
                     const coordiante = e.nativeEvent.coordinate;
                     const selected = places.filter(
                         item => item.coordinate.latitude === coordiante.latitude && item.coordinate.longitude === coordiante.longitude );
-                    console.log('selected :', selected);
+                
+                    // 선택된 항목이 있으면 모달로 웹뷰 보이기        
+                    if ( selected.length > 0 ) {
+                        // Kakao API가 https로 나와야하는 결과를 http로 제공한다. 변환
+                        const url = selected[0].url.replace('http://', 'https://');
+                        // 선택된 항목의 url을 state에 설정
+                        setSelected(url)
+                        // 모달 보이기
+                        setModalVisible(true);
+                    }    
                 }}
             >
                 <Marker
@@ -80,11 +65,24 @@ const MapComponent = ({stores}) => {
                 />            
                 {places && places.length > 0 ?    
                     places.map( (item) => (
-                    <Marker title={item.title} description={item.description} coordinate={item.coordinate} key={item.id} />
+                    <Marker
+                        title={item.title}
+                        description={item.description}
+                        coordinate={item.coordinate} key={item.id} />
                     ))
                     : null
                 }
             </MapView>
+            <Modal
+                visible={modalVisible}
+                style={{alignItems:'center'}}
+                onBackdropPress={() => {setModalVisible(false) }} // 모달 콘텐츠 영역 외 터치시 모달 닫기
+                onRequestClose={() => { setModalVisible(false) }} // for android - backbutton
+            >
+                <View style={{width: '90%', height: '60%'}} >
+                    <WebView source={{ uri: selectedPlaceUrl }} />
+                </View>
+            </Modal>
         </View>
     )
 }
