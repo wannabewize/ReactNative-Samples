@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   SafeAreaView,
   Button,
@@ -22,6 +22,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function HomeScreen({ navigation }) {
   let [text, setText] = useState('');
+  useEffect(() => {
+    // Screen Lifecycle
+    navigation.addListener('focus', () => {
+      console.log('Home Screen appear');
+    });
+    navigation.addListener('blur', () => {
+      console.log('Home Screen disappear');
+    });
+  }, []);  
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text style={{fontSize: 20}}>Home Screen</Text>
