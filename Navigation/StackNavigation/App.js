@@ -6,11 +6,11 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   Button,
-  StatusBar,
+  TextInput,
   StyleSheet,
   Text,
   useColorScheme,
@@ -20,11 +20,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-function HomeScreen({navigation}) {
+function HomeScreen({ navigation }) {
   let [text, setText] = useState('');
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
+      <Text style={{fontSize: 20}}>Home Screen</Text>
+      <TextInput
+        style={{ borderWidth: 1, borderColor: 'gray', width: '80%', height: 26, marginVertical: 12 }}
+        onChangeText={text => { setText(text) }}
+      />
       <Button
         onPress={() => { navigation.navigate('Detail', { value: text }) }}
         title="디테일 보기 - 1" />
