@@ -10,7 +10,7 @@ const HomeScreen = () => {
         const unsubscribe = navigation.addListener('focus', () => {
             console.log('Home Screen focus event fired!');
         });
-        return unsubscribe();
+        return unsubscribe;
     }, [navigation]);
 
     useEffect( () => {
