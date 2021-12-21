@@ -19,8 +19,8 @@ export const MovieNavigation = () => {
 
 const MovieListScreen = ({ navigation }) => {
   return (
-    <SafeAreaView>
-      <Text style={{ fontSize: 24, alignSelf: 'center', marginVertical: 24 }}>MovieList</Text>
+    <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 24, marginVertical: 24 }}>MovieList</Text>
       <Button onPress={() => navigation.navigate('MovieDetail')} title="Detail" />
     </SafeAreaView>
   )
@@ -28,7 +28,7 @@ const MovieListScreen = ({ navigation }) => {
 
 const MovieDetailScreen = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text style={{ fontSize: 24, alignSelf: 'center', marginVertical: 24 }}>MovieDetail</Text>
     </SafeAreaView>
   )

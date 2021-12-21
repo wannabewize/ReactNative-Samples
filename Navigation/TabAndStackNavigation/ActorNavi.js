@@ -4,16 +4,15 @@ import {
   SafeAreaView,
   Text,
 } from 'react-native';
-import { createNativeStackNavigator, useNavigation } from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 const ActorStack = createNativeStackNavigator();
 
-const ActorListScreen = () => {
-  const navigation = useNavigation();
+const ActorListScreen = ({navigation}) => {  
   return (
-    <SafeAreaView>
-      <Text style={{fontSize:24, alignSelf: 'center', marginVertical: 24}}>ActorList</Text>
+    <SafeAreaView  style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{fontSize:24, marginVertical: 24}}>ActorList</Text>
       <Button title="Detail" onPress={() => {navigation.navigate('ActorDetail')}} />
     </SafeAreaView>
   )
@@ -21,7 +20,9 @@ const ActorListScreen = () => {
 
 const ActorDetailScreen = () => {
   return (
-    <Text>ActorDetail</Text>
+    <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{fontSize:24, marginVertical: 24}}>ActorDetail</Text>
+    </SafeAreaView>
   )
 }
 
