@@ -1,30 +1,27 @@
-import React, {useEffect} from 'react';
-import {SafeAreaView, View, Text} from 'react-native';
-import { FlatList } from 'react-native-gesture-handler';
-import {useSelector, useDispatch} from "react-redux";
+import React, { useEffect } from 'react';
+import { SafeAreaView, View, FlatList, Text } from 'react-native';
 
-const FavoriteCell = ({item}) => (
-    <View>
-        <Text>{item.id} - {item.title}</Text>
-    </View>
+const FavoriteCell = ({ item }) => (
+  <View>
+    <Text>{item.id} - {item.title}</Text>
+  </View>
 )
 
 const FavoriteScreen = () => {
-    const favorites = useSelector( (state) => {return state.favorites});
+  const favorites = [
+    { id: 1, title: 'favorite1' }
+  ];
 
-    useEffect(() => {
-        console.log('use effect :', favorites);
-    }, [favorites]);
-    return (
-        <SafeAreaView>
-            <Text>Favorites</Text>
-            <FlatList
-                data={favorites}
-                keyExtractor={(item) => { return `movie${item.id}`}}
-                renderItem={({item}) => ( <FavoriteCell item={item} />)}
-            />
-        </SafeAreaView>
-    )
+  return (
+    <SafeAreaView>
+      <Text>Favorites</Text>
+      <FlatList
+        data={favorites}
+        keyExtractor={(item) => { return `movie${item.id}` }}
+        renderItem={({ item }) => (<FavoriteCell item={item} />)}
+      />
+    </SafeAreaView>
+  )
 }
 
 export default FavoriteScreen;
