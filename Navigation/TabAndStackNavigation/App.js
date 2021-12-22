@@ -21,7 +21,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MovieNavigation } from './MovieNavi';
 import { ActorNavigation } from './ActorNavi';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
 const Tab = createBottomTabNavigator();
@@ -35,12 +35,18 @@ const App = () => {
           component={MovieNavigation}
           options={{
             tabBarIcon: ({ focused }) => {
-              return <Icon name="film-outline" size={28} />;
+              return focused
+                ? <Icon name="movie-filter" size={32} />
+                : <Icon name="theaters" size={32} />;
             }
           }} />
         <Tab.Screen
           name="ActorScreen"
           component={ActorNavigation}
+          options={{
+            tabBarIcon: ({focused}) => (
+              focused ? <Icon name="emoji-people" size={32}/> : <Icon name="person" size={32}/>)
+          }}
         />
       </Tab.Navigator>
     </NavigationContainer>
