@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { SafeAreaView, View, FlatList, Text } from 'react-native';
+import { useSelector } from 'react-redux';
 
 const FavoriteCell = ({ item }) => (
   <View>
@@ -8,9 +9,11 @@ const FavoriteCell = ({ item }) => (
 )
 
 const FavoriteScreen = () => {
-  const favorites = [
-    { id: 1, title: 'favorite1' }
-  ];
+  const favorites = useSelector( (state) => { return state.favorites });
+
+  useEffect(() => {
+    console.log('use effect works :', favorites);
+  }, [favorites]);
 
   return (
     <SafeAreaView>
