@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollView, Button, Text, Image, TouchableOpacity } from 'react-native';
+import { ScrollView, Button, Text, Image } from 'react-native';
 import {useSelector, useDispatch} from "react-redux";
 
 
@@ -23,9 +23,9 @@ const MovieDetailScreen = ({ navigation, route }) => {
     else {
       setFavorite(false);
     }
-  }, [favorites]);
+  }, [favorites, movie]);
 
-
+  // 스크린의 내비게이션 바에 버튼 추가하기
   React.useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: () => (
@@ -34,15 +34,18 @@ const MovieDetailScreen = ({ navigation, route }) => {
     })
   }, [navigation, isFavorite]);
 
+  // 즐겨찾기 추가/제거
   function toggleFavorite() {
     console.log('toggle favorite :', movie);
     setFavorite(!isFavorite);
 
     if (isFavorite) {
-      dispatch({ type: 'AddFavorite', data: movie.id });
+      console.log('remove favorite');
+      dispatch({ type: 'RemoveFavorite', data: movie });
     }
     else {
-      dispatch({ type: 'RemoveFavorite', data: movie.id });
+      console.log('add favorite');
+      dispatch({ type: 'AddFavorite', data: movie });
     }
   }
 
